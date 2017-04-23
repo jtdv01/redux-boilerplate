@@ -14,8 +14,20 @@ Gotachas:
   - import { BrowserRouter } from 'react-router'
     - THIS IS ALWAYS TRICKY! Browser Router has to be imported from react-router-dom
 
+# Other gotchas
 
-# Web pack babel
+## Bootstrap
+
+```js
+// Components need to import the css
+
+import 'bootstrap/dist/css/bootstrap.css';
+import 'jquery';
+import 'bootstrap/dist/js/bootstrap.min';
+
+```
+
+## Web pack babel
 - npm run eject
 - Install babel loader
 npm install babel-loader --save-dev
@@ -33,7 +45,7 @@ module: {
 ```
 
 
-# Redux DevTools
+## Redux DevTools
 https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd/related?hl=en
 
 

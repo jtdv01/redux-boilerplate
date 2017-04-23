@@ -1,7 +1,10 @@
 import { INCREMENT } from '../actions';
 import { combineReducers } from 'redux';
+import { reducer as formReducer } from 'redux-form'
+
 const initialState = {
-  number: 1
+  number: 1,
+  form: formReducer
 }
 
 function IncrReducer(number = initialState.number, action) {
@@ -20,5 +23,6 @@ function IncrReducer(number = initialState.number, action) {
 }
 
 export default combineReducers({
-    number: IncrReducer
+    number: IncrReducer,
+    form: formReducer
 });

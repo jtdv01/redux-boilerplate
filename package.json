@@ -1,5 +1,5 @@
 {
-  "name": "redux-counter",
+  "name": "redux-boilerplate",
   "version": "0.1.0",
   "private": true,
   "devDependencies": {
@@ -45,6 +45,7 @@
   "dependencies": {
     "babel-loader": "^6.4.1",
     "bootstrap": "^3.3.7",
+    "jquery": "^3.2.1",
     "react": "^15.5.4",
     "react-bootstrap": "^0.30.9",
     "react-dom": "^15.5.4",
@@ -52,6 +53,7 @@
     "react-router": "^4.1.1",
     "react-router-dom": "^4.1.1",
     "redux": "^3.6.0",
+    "redux-form": "^6.6.3",
     "redux-thunk": "^2.2.0"
   },
   "scripts": {

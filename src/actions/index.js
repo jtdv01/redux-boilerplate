@@ -1,4 +1,4 @@
 export const INCREMENT = 'INCREMENT';
-export function Increment(payload){
+export function increment(payload){
     return {type: INCREMENT, payload: payload}
 }
