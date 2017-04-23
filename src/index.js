@@ -4,23 +4,30 @@ import App from './App';
 import './index.css';
 
 import { IndexRoute, Route, BrowserRouter, Link } from 'react-router-dom';
-import { Provider } from 'redux';
-import store from './reducers/store';
+import { Provider } from 'react-redux';
+// import store from './reducers/store';
 
+import { createStore } from 'redux';
+import reducers from './reducers'
+const store = createStore(reducers);
 
+import Mnavbar from './components/mnavbar';
 
-
-ReactDOM.render(
+const rootComponent =(
 <Provider store={store}>
   <BrowserRouter>
-      <div>
-        {/*<Heading />*/}
-        <Route exact path="/" component={App}>
-          <IndexRoute component={App}/>
-        </Route>
-      </div>
+    <div>
+      <Mnavbar/>
+      <Route path="/" component={App}>
+        <IndexRoute component= {App} />
+      </Route>
+    </div>
   </BrowserRouter>
 </Provider>
+);
+
+ReactDOM.render(
+  rootComponent
   ,
   document.getElementById('root')
 );
