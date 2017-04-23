@@ -66,3 +66,16 @@ const store = createStore(reducers,
 export default store;
 
 ```
+
+## Deploying to github pages
+
+npm install --save-dev gh-pages
+
+Add this to package.json
+
+```
+  "homepage": "https://myusername.github.io/my-app",
+  ```
+
+
+  npm run deploy
